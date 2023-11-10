@@ -1,0 +1,458 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    border-style: solid none solid none;
+    border-color: blueviolet white lightgray white;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 32px;
+    font-family: Arial;
+}
+
+    a:visited {
+        color: gray;
+        text-decoration: none;
+    }
+
+    a:visited.Current {
+        color: blueviolet;
+        text-decoration: none;
+    }
+
+    a:link {
+        color: gray;
+        text-decoration: none;
+    }
+
+    a:link.Current {
+        color: blueviolet;
+        text-decoration: none;
+    }
+
+section {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial;
+    flex: 1;
+}
+
+    #Left_Box {
+        display: flex;
+        display: block;
+        margin-top: 2.5%;
+        border-style: none solid none none;
+        border-color: white lightgray white white;
+        flex: 1;
+    }
+
+        #Left_Box div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 25%;
+            margin-right: 0%;
+            margin-bottom: 17.5%;
+            flex: 1;
+        }
+
+            #Left_Box img {
+                border-radius: 50%;
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #Left_Box p {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+                p.Full_Name {
+                    color: gray;
+                    margin-bottom: 2.5%;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+
+                p.Enployment {
+                    color: gray;
+                    margin-top: 0%;
+                    margin-bottom: 2.5%;
+                    font-size: 32px;
+                }
+
+                p.Email {
+                    color: blueviolet;
+                    margin-top: 0%;
+                    font-size: 24px;
+                }
+
+    #Right_Box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5%;
+        flex: 2;
+    }
+
+        #Right_Box div.Offset {
+            margin-left: 5%;
+            margin-right: 25%;
+            margin-bottom: 2.5%;
+            }
+
+            #Right_Box h1 {
+                display: flex;
+                color: gray;
+                font-weight: normal;
+                justify-content: flex-start;
+                font-size: 48px;
+                flex: 1;
+            }
+
+            #Right_Box Article {
+                font-size: 28px;
+                margin-top: 7.5%;
+            }
+
+#Right_Box p.Table_Label {
+    font-size: 28px;
+    margin-top: 7.5%;
+}
+
+#Right_Box strong {
+    font-size: 28px;
+    margin-top: 7.5%;
+}
+
+#Right_Box input {
+    scale: 200%;
+    margin: 2%;
+}
+
+#Right_Box label {
+    font-size: 28px;
+}
+
+p.Progress_Label {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 0%;
+    margin-bottom: 1.5%;
+}
+
+div.Progress_Bar {
+    height: 20px;
+    background-color: gray;
+    border-radius: 25px;
+    margin-top: 0%;
+    margin-bottom: 2.5%;
+}
+
+div.Progress_Level {
+    height: 100%;
+    background-color: dodgerblue;
+    border-radius: 25px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+div.Blank_Space_10P {
+    margin-top: 10%;
+}
+
+div.Blank_Space_15P {
+    margin-top: 15%;
+}
+
+#Textbox div.Flex {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+    #Textbox div.Left {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+        #Textbox div.Left strong {
+            font-size: 32px;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+    #Textbox div.Right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex: 1;
+    }
+
+        #Textbox div.Right h1 {
+            font-size: 32px;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            color: gray;
+        }
+
+#Textbox p {
+    font-size: 24px;
+    margin-top: 2.5%;
+    margin-bottom: 0%;
+    color: gray;
+}
+
+div.Linked_URL {
+    font-size: 24px;
+    color: grey;
+}
+    
+    div.Linked_URL a:any-link {
+        font-size: 24px;
+        color: blueviolet;
+    }
+
+div.Pointform {
+    font-size: 32px;
+    margin-bottom: 5%;
+}
+
+    div.Pointform a:any-link {
+        font-size: 32px;
+        color: blueviolet;
+    }
+
+div.Footer_Spacer {
+    margin-top: 2.5%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    border-style: solid none none none;
+    border-color: lightgray white white white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 16px;
+    font-family: Arial;
+}
+
+/* Half Screen Desktop */
+@media only screen and (max-width: 1200px) {    
+    header {
+        justify-content: space-around;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-size: 24px;
+    }
+    
+    section {
+        flex-direction: column;
+    }
+
+    #Left_Box {
+        margin-top: 5%;
+        border-style: none none solid none;
+        border-color: white white lightgray white;
+    }
+
+    #Left_Box div {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+
+    #Left_Box img {
+        width: 50%;
+    }
+    
+    #Right_Box Article {
+        font-size: 28px;
+    }
+
+    #Right_Box p.Table_Label {
+        font-size: 28px;
+    }
+
+    #Right_Box strong {
+        font-size: 28px;
+    }
+
+    #Right_Box input {
+        scale: 200%;
+        margin: 2%;
+    }
+
+    #Right_Box label {
+        font-size: 28px;
+    }
+
+    p.Progress_Label {
+        font-size: 32px;
+        margin-bottom: 2.5%;
+    }
+
+    div.Progress_Bar {
+        height: 20px;
+    }
+
+    #Right_Box div.Offset {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 2.5%;
+        }
+
+    #Right_Box h1 {
+        font-size: 48px;
+        justify-content: center;
+    }
+
+    #Textbox div.Left strong {
+        font-size: 24px;
+    }
+
+    #Textbox div.Right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex: 1;
+    }
+
+    #Textbox div.Right h1 {
+        font-size: 24px;
+    }
+
+    #Textbox p {
+        font-size: 20px;
+    }
+
+    div.Linked_URL {
+        font-size: 24px;
+    }
+        
+    div.Linked_URL a:any-link {
+        font-size: 24px;;
+    }
+
+    div.Pointform {
+        font-size: 32px;
+    }
+    
+    div.Pointform a:any-link {
+        font-size: 32px;
+    }
+}
+
+/* Moble Screen */
+@media only screen and (max-width: 900px) {    
+    header {
+        justify-content: space-around;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 16px;
+    }
+    
+    section {
+        flex-direction: column;
+    }
+
+    #Left_Box {
+        margin-top: 5%;
+        border-style: none none solid none;
+        border-color: white white lightgray white;
+    }
+
+    #Left_Box div {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+
+    #Left_Box img {
+        width: 50%;
+    }
+
+    #Right_Box Article {
+        font-size: 20px;
+    }
+
+    #Right_Box p.Table_Label {
+        font-size: 20px;
+    }
+
+    #Right_Box strong {
+        font-size: 20px;
+    }
+
+    #Right_Box input {
+        scale: 100%;
+        margin: 1%;
+    }
+
+    #Right_Box label {
+        font-size: 20px;
+    }
+
+    p.Progress_Label {
+        font-size: 24px;
+        margin-bottom: 2.5%;
+    }
+
+    div.Progress_Bar {
+        height: 15px;
+    }
+
+    #Right_Box div.Offset {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 2.5%;
+        }
+
+    #Right_Box h1 {
+        font-size: 40px;
+        justify-content: center;
+    }
+
+    #Textbox div.Left strong {
+        font-size: 18px;
+    }
+
+    #Textbox div.Right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex: 1;
+    }
+
+    #Textbox div.Right h1 {
+        font-size: 18px;
+    }
+
+    #Textbox p {
+        font-size: 14px;
+    }
+
+    div.Linked_URL {
+        font-size: 24px;
+    }
+        
+    div.Linked_URL a:any-link {
+        font-size: 24px;
+    }
+
+    div.Pointform {
+        font-size: 24px;
+    }
+    
+    div.Pointform a:any-link {
+        font-size: 24px;
+    }
+}
